@@ -38,7 +38,9 @@ button .circle {
   background-color: #fff;
   width: 100px;
   height: 100px;
+  /* makes it a circle */
   border-radius: 50%;
+  /* x and y axis i want it to be in the middle of where i put the point */
   transform: translate(-50%, -50%) scale(0);
   animation: scale 0.5s ease-out;
 }
@@ -46,6 +48,7 @@ button .circle {
 @keyframes scale {
   to {
     transform: translate(-50%, -50%) scale(3);
+    /* wanted it to disappear in the time frame of the transform translate */
     opacity: 0;
   }
 }
